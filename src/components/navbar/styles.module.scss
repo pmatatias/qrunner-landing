@@ -8,11 +8,21 @@
 }
 
 .logo {
-  padding: auto 4px;
-  background-color: yellow;
   flex: 1;
-}
+  text-align: center;
 
+
+  Img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    Img {
+      width: 100px;
+    }
+  }
+}
 .menu {
   background-color: green;
   flex: 4;
@@ -23,9 +33,10 @@
   justify-content: start;
   gap: 60px;
   list-style: none;
-}
-.menu-items li {
-  text-decoration: none;
+
+  li {
+    text-decoration: none;
+  }
 }
 
 .btnTry {
