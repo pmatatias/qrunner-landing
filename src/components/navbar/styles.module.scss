@@ -24,7 +24,7 @@
   }
 }
 .menu {
-  background-color: green;
+  // background-color: green;
   flex: 4;
 }
 .menu-items {
@@ -33,6 +33,7 @@
   justify-content: start;
   gap: 60px;
   list-style: none;
+  font-weight: 600;
 
   li {
     text-decoration: none;
