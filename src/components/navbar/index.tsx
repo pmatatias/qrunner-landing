@@ -4,6 +4,7 @@ import Section from "../section";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import * as styles from "./styles.module.scss";
+import BaseButton from "../basebutton";
 
 const Navbar = () => {
   const scrollToTop = () => {
@@ -44,13 +45,16 @@ const Navbar = () => {
           </div>
           <div className={styles.menu}>
             <ul className={styles.menuItems}>
-              <li>a</li>
-              <li>b</li>
-              <li>c</li>
-              <li>d</li>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Testimonials</li>
+              <li>Get App</li>
             </ul>
           </div>
-          <div className={styles.btnTry}> btn </div>
+          <div className={styles.btnTry}>
+            {" "}
+            <BaseButton label="Try Now" />
+          </div>
         </div>
       </Section>
     </>
