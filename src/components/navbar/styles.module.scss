@@ -11,7 +11,6 @@
   flex: 1;
   text-align: center;
 
-
   Img {
     max-width: 100%;
     margin: 0 auto;
@@ -23,6 +22,7 @@
     }
   }
 }
+
 .menu {
   // background-color: green;
   flex: 4;
@@ -34,13 +34,23 @@
   gap: 60px;
   list-style: none;
   font-weight: 600;
+  transition: transform 0.3s ease;
 
   li {
     text-decoration: none;
+    cursor: pointer;
+
+    .active{
+      color: aqua;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
+
+
 .btnTry {
   margin: auto 0px;
-
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Section from "../section";
 import { graphql, useStaticQuery } from "gatsby";
@@ -22,6 +22,12 @@ const Navbar = () => {
       }
     }
   `);
+
+  const [isExpand, setIsExpand] = useState(false);
+
+  const handleToogle = () => {
+    setIsExpand(!isExpand);
+  };
 
   return (
     <>
