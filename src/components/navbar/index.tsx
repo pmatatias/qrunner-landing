@@ -32,36 +32,62 @@ const Navbar = () => {
   return (
     <>
       <Section>
-        <div className={styles.navbar}>
-          <div className={styles.logo}>
-            <Link to="/">
-              <Img
-                fluid={data.myImage.childImageSharp.fluid}
-                style={{
-                  // inline style to avoid graphql auto resize image
-                  minWidth: "100px",
-                  maxWidth: "195px",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                }}
-                alt="Qrunner logo"
-              />
-            </Link>
+        <nav>
+          <div className={styles.navbar}>
+            <div className={styles.logo}>
+              <Link to="/">
+                <Img
+                  fluid={data.myImage.childImageSharp.fluid}
+                  style={{
+                    // inline style to avoid graphql auto resize image
+                    minWidth: "100px",
+                    maxWidth: "195px",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                  }}
+                  alt="Qrunner logo"
+                />
+              </Link>
+            </div>
+            <div className={styles.menu}>
+              <ul className={styles.menuItems}>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Testimonials</li>
+                <li>Get App</li>
+              </ul>
+            </div>
+            <div className={styles.btnTry}>
+              {" "}
+              <BaseButton label="Try Now" />
+            </div>
+            <div className={styles.iconMobile} onClick={handleToogle}>
+              {isExpand ? "X" : "H"}
+            </div>
           </div>
-          <div className={styles.menu}>
-            <ul className={styles.menuItems}>
-              <li>Features</li>
-              <li>Pricing</li>
-              <li>Testimonials</li>
-              <li>Get App</li>
-            </ul>
+
+          <div
+            className={`${styles.mobileMenu}  ${isExpand ? "" : styles.hidde}`}
+          >
+            <li>
+              <Link to="/">Features</Link>
+            </li>
+            <li>
+              <Link to="/">Pricing</Link>
+            </li>
+            <li>
+              <Link to="/">Testimonials</Link>
+            </li>
+            <li>
+              <Link to="/">Get App</Link>
+            </li>
+            <div className={styles.btnTry}>
+              {" "}
+              <BaseButton label="Try Now" />
+            </div>
           </div>
-          <div className={styles.btnTry}>
-            {" "}
-            <BaseButton label="Try Now" />
-          </div>
-        </div>
+        </nav>
       </Section>
     </>
   );

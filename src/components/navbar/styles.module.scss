@@ -5,6 +5,7 @@
   display: flex;
   gap: 12px;
   padding: 30px 0;
+  justify-content: space-between;
 }
 
 .logo {
@@ -16,7 +17,7 @@
     margin: 0 auto;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     Img {
       width: 100px;
     }
@@ -24,10 +25,12 @@
 }
 
 .menu {
-  // background-color: green;
   flex: 4;
 }
 .menu-items {
+  @media (max-width: 830px) {
+    display: none;
+  }
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -40,7 +43,7 @@
     text-decoration: none;
     cursor: pointer;
 
-    .active{
+    .active {
       color: aqua;
     }
     &:hover {
@@ -49,8 +52,32 @@
   }
 }
 
-
-
 .btnTry {
   margin: auto 0px;
+  @media (max-width: 830px) {
+    display: none;
+  }
+}
+
+.iconMobile {
+  @media (min-width: 830px) {
+    display: none;
+  }
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.mobileMenu {
+ 
+  @media (max-width: 830px) {
+    display: block;
+  }
+
+  @media (min-width: 830px) {
+    display: none;
+  }
+}
+.hidde {
+  display: none;
 }
