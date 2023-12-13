@@ -17,7 +17,7 @@
     margin: 0 auto;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
     Img {
       width: 100px;
     }
@@ -63,13 +63,15 @@
   @media (min-width: 830px) {
     display: none;
   }
-  color: red;
-  display: flex;
-  align-items: center;
+  @media (max-width: 658px) {
+    width: 28px;
+    height: 22px;
+  }
+  width: 36px;
+  height: 30px;
 }
 
 .mobileMenu {
- 
   @media (max-width: 830px) {
     display: block;
   }

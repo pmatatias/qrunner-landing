@@ -1,13 +1,13 @@
 // HamburgerMenu.module.scss
 .hamburgerMenu {
   cursor: pointer;
-//   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 36px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   position: relative;
+  justify-content: space-between;
 
   .bar {
     width: 100%;
@@ -16,16 +16,20 @@
     border-radius: 4px;
     background-color: #333;
     margin: 4px 0;
-    transition:all 0.4s ease;
+    transition: all 0.4s ease;
     position: relative;
     transform-origin: 4px;
     // left: 0;
-}
-
+    @media (max-width: 658px) {
+      margin: 0;
+      height: 2px;
+      transform-origin: 0;
+    }
+  }
 
   &.open {
     .bar:nth-child(1) {
-      transform: rotate(45deg)  ;
+      transform: rotate(45deg);
     }
 
     .bar:nth-child(2) {
@@ -34,7 +38,7 @@
     }
 
     .bar:nth-child(3) {
-      transform: rotate(-45deg) ;
+      transform: rotate(-45deg);
     }
   }
 }

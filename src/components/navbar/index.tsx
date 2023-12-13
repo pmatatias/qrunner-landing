@@ -64,8 +64,6 @@ const Navbar = () => {
               <BaseButton label="Try Now" />
             </div>
             <div className={styles.iconMobile} onClick={handleToogle}>
-              {/* {isExpand ? "X" : "H"}
-               */}
               <HamburgerMenu isExpand={isExpand} />
             </div>
           </div>
