@@ -84,6 +84,7 @@ const Navbar = () => {
             <Link to="/">
               <li>Get App</li>
             </Link>
+            
             <div className={styles.btnTry2}>
               {" "}
               <BaseButton label="Try Now" />
