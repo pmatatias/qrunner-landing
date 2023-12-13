@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import * as styles from "./styles.module.scss";
 import BaseButton from "../basebutton";
+import HamburgerMenu from "../hamburger";
 
 const Navbar = () => {
   const scrollToTop = () => {
@@ -63,7 +64,9 @@ const Navbar = () => {
               <BaseButton label="Try Now" />
             </div>
             <div className={styles.iconMobile} onClick={handleToogle}>
-              {isExpand ? "X" : "H"}
+              {/* {isExpand ? "X" : "H"}
+               */}
+              <HamburgerMenu isExpand={isExpand} />
             </div>
           </div>
 
