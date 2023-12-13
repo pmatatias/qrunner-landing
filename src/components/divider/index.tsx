@@ -1,8 +1,5 @@
 import React from "react";
 
-// interface DividerProps {
-//   margin?: string;
-// }
 
 const Divider = (props: any) => {
   const horizontalDiv = {

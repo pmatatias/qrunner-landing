@@ -52,13 +52,6 @@
   }
 }
 
-.btnTry {
-  margin: auto 0px;
-  @media (max-width: 830px) {
-    display: none;
-  }
-}
-
 .iconMobile {
   @media (min-width: 830px) {
     display: none;
@@ -73,6 +66,24 @@
 }
 
 .mobileMenu {
+  list-style: none;
+  left: 0;
+  right: 0;
+  margin-top: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 400;
+  :hover li {
+    background-color: #33333333;
+  }
+  li {
+    padding: 20px 0;
+    border-bottom: solid 1px #33333333;
+  }
+
   @media (max-width: 830px) {
     display: block;
   }
@@ -83,4 +94,17 @@
 }
 .hidde {
   display: none;
+}
+.btnTry {
+  margin: auto 0px;
+  @media (max-width: 830px) {
+    display: none;
+  }
+}
+.btnTry2 {
+  margin: 50px auto;
+  text-align: center;
+  @media (min-width: 830px) {
+    display: none;
+  }
 }

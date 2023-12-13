@@ -6,6 +6,7 @@ import Img from "gatsby-image";
 import * as styles from "./styles.module.scss";
 import BaseButton from "../basebutton";
 import HamburgerMenu from "../hamburger";
+import Divider from "../divider";
 
 const Navbar = () => {
   const scrollToTop = () => {
@@ -71,19 +72,19 @@ const Navbar = () => {
           <div
             className={`${styles.mobileMenu}  ${isExpand ? "" : styles.hidde}`}
           >
-            <li>
-              <Link to="/">Features</Link>
-            </li>
-            <li>
-              <Link to="/">Pricing</Link>
-            </li>
-            <li>
-              <Link to="/">Testimonials</Link>
-            </li>
-            <li>
-              <Link to="/">Get App</Link>
-            </li>
-            <div className={styles.btnTry}>
+            <Link to="/">
+              <li>Features</li>
+            </Link>
+            <Link to="/">
+              <li>Pricing</li>
+            </Link>
+            <Link to="/r">
+              <li>Testimonials</li>
+            </Link>
+            <Link to="/">
+              <li>Get App</li>
+            </Link>
+            <div className={styles.btnTry2}>
               {" "}
               <BaseButton label="Try Now" />
             </div>
