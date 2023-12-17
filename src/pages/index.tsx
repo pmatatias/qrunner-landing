@@ -3,7 +3,7 @@ import type { PageProps } from "gatsby";
 
 import Navbar from "../components/navbar";
 import Divider from "../components/divider";
-import Section from "../components/section";
+import Container from "../components/container";
 import "../sass/basic.scss";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -11,9 +11,9 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <Navbar />
       <Divider />
-      <Section>
+      <Container>
         <Divider marginTop={100} />
-      </Section>
+      </Container>
     </>
   );
 };

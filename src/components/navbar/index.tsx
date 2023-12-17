@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Section from "../section";
+import Container from "../container";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import * as styles from "./styles.module.scss";
@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Section>
+      <Container>
         <nav>
           <div className={styles.navbar}>
             <div className={styles.logo}>
@@ -91,7 +91,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      </Section>
+      </Container>
     </>
   );
 };
