@@ -1,1 +1,47 @@
-@import './fonts.scss';
+@import "../../sass/color.scss";
+.breakLine {
+  display: none;
+}
+.mainTitle {
+  margin: 0 auto;
+  padding-top: min(5vw, 50px);
+  text-align: center;
+  font-size: max(min(6vw, 72px), 30px);
+  color: $qr-black;
+  span {
+    background-image: $qr-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (min-width: 358px) {
+    .breakLine {
+      display: inline;
+    }
+  }
+}
+
+.mainDesc {
+  text-align: center;
+  color: $qr-black;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  padding: 24px;
+
+
+  @media (max-width: 658px) {
+    font-size: 12px;
+    padding: 8px;
+    line-height: 20px;
+
+  }
+
+  @media (min-width: 958px) {
+
+    .breakLine {
+      display: inline;
+    }
+  }
+}
