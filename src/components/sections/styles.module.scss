@@ -30,18 +30,26 @@
   font-weight: 400;
   padding: 24px;
 
-
   @media (max-width: 658px) {
     font-size: 12px;
     padding: 8px;
     line-height: 20px;
-
   }
 
   @media (min-width: 958px) {
-
     .breakLine {
       display: inline;
     }
+  }
+}
+
+.btnrow {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  @media (max-width: 658px) {
+    flex-direction: column;
   }
 }
