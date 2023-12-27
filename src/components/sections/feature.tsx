@@ -2,8 +2,8 @@ import React from "react";
 import * as styles from "./styles.module.scss";
 import Container from "../container";
 import BaseButton from "../basebutton";
-import Icon from "../icon";
-// import Arorw from "../../images/arrow_right.svg";
+import { StaticImage } from "gatsby-plugin-image";
+import Divider from "../divider";
 const Features = (props: any) => {
   return (
     <Container>
@@ -21,16 +21,23 @@ const Features = (props: any) => {
       </p>
       <div className={styles.btnrow}>
         <BaseButton label="Start your free trial" />
-        <a>Plans and pricing</a>
-        <Icon
-        src={'../../images/arrow_right.svg'}
-        alt="Custom Icon"
-        width="50"
-        height="50"
-        className="custom-icon"
-        style={{ color: 'red' }}
-      />
+        <a className={styles.btnprice}>
+          <p>Plans and pricing</p>
+          <StaticImage
+            className={styles.icn}
+            src="../../images/arrow_right.svg"
+            alt="arrow-right"
+          />
+        </a>
       </div>
+      <div className={styles.imgFeature}>
+        <StaticImage src="../../images/feature.png" alt="feature" />
+      </div>
+      <Divider />
+      <div>
+        <h4>Trusted by high growth companies</h4>
+      </div>
+      <Divider />
     </Container>
   );
 };

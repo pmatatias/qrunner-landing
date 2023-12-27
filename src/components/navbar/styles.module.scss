@@ -1,4 +1,5 @@
-@import "../../sass/color.scss";
+@import "../../sass/myvariable.scss";
+// @import "../../sass/basic.scss";
 
 .navbar {
   background-color: white;
@@ -70,6 +71,7 @@
 
 .mobileMenu {
   list-style: none;
+  z-index: $z-index3;
   left: 0;
   right: 0;
   margin-top: 3px;

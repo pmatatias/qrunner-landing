@@ -1,29 +1,29 @@
 import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Container from "../container";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+// import { graphql, useStaticQuery } from "gatsby";
+// import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./styles.module.scss";
 import BaseButton from "../basebutton";
 import HamburgerMenu from "../hamburger";
-import Divider from "../divider";
 
 const Navbar = () => {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
-  const data = useStaticQuery(graphql`
-    query {
-      myImage: file(relativePath: { eq: "qrunner-logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 195) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     myImage: file(relativePath: { eq: "qrunner-logo.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 195) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   const [isExpand, setIsExpand] = useState(false);
 
@@ -38,8 +38,9 @@ const Navbar = () => {
           <div className={styles.navbar}>
             <div className={styles.logo}>
               <Link to="/">
-                <Img
-                  fluid={data.myImage.childImageSharp.fluid}
+                <StaticImage
+                  // fluid={data.myImage.childImageSharp.fluid}
+                  src="../../images/qrunner-logo.png"
                   style={{
                     // inline style to avoid graphql auto resize image
                     minWidth: "100px",
@@ -84,7 +85,7 @@ const Navbar = () => {
             <Link to="/">
               <li>Get App</li>
             </Link>
-            
+
             <div className={styles.btnTry2}>
               {" "}
               <BaseButton label="Try Now" />

@@ -1,4 +1,4 @@
-@import "../../sass/color.scss";
+@import "../../sass/myvariable.scss";
 .breakLine {
   display: none;
 }
@@ -13,6 +13,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: inherit;
   }
 
   @media (min-width: 358px) {
@@ -52,4 +53,24 @@
   @media (max-width: 658px) {
     flex-direction: column;
   }
+}
+.btnprice {
+  display: flex;
+  gap: 4px;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  .icn {
+    width: 18px;
+    height: 18px;
+    @media (max-width: 658px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.imgFeature {
+  margin: min(6vw, 65px) auto;
+  max-width: 860px;
 }
