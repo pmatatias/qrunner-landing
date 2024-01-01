@@ -1,9 +1,9 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
-import Container from "../container";
-import BaseButton from "../basebutton";
+import Container from "../../container";
+import BaseButton from "../../basebutton";
 import { StaticImage } from "gatsby-plugin-image";
-import Divider from "../divider";
+import Divider from "../../divider";
 const Features = (props: any) => {
   return (
     <Container>
@@ -31,7 +31,7 @@ const Features = (props: any) => {
         </a>
       </div>
       <div className={styles.imgFeature}>
-        <StaticImage src="../../images/feature.png" alt="feature" />
+        <StaticImage src="../../../images/feature.png" alt="feature" />
       </div>
       <Divider />
       <div>
