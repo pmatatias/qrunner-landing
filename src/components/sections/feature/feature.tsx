@@ -4,6 +4,7 @@ import Container from "../../container";
 import BaseButton from "../../basebutton";
 import { StaticImage } from "gatsby-plugin-image";
 import Divider from "../../divider";
+import CompanyLogo from "./company";
 const Features = (props: any) => {
   return (
     <Container>
@@ -25,7 +26,7 @@ const Features = (props: any) => {
           <p>Plans and pricing</p>
           <StaticImage
             className={styles.icn}
-            src="../../images/arrow_right.svg"
+            src="../../../images/arrow_right.svg"
             alt="arrow-right"
           />
         </a>
@@ -34,8 +35,25 @@ const Features = (props: any) => {
         <StaticImage src="../../../images/feature.png" alt="feature" />
       </div>
       <Divider />
-      <div>
+      <div className={styles.trusted}>
         <h4>Trusted by high growth companies</h4>
+        <ul>
+          <li>
+            <CompanyLogo imageName="qrunner-logo.png" />
+          </li>
+          <li>
+            <CompanyLogo imageName="qrunner-logo.png" />
+          </li>
+          <li>
+            <CompanyLogo imageName="qrunner-logo.png" />
+          </li>
+          <li>
+            <CompanyLogo imageName="qrunner-logo.png" />
+          </li>
+          <li>
+            <CompanyLogo imageName="qrunner-logo.png" />
+          </li>
+        </ul>
       </div>
       <Divider />
     </Container>
