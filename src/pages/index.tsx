@@ -13,6 +13,15 @@ const IndexPage: React.FC<PageProps> = () => {
       <Navbar />
       <Divider />
       <Features />
+      <div className="utlizing">
+        <div className="tsxt">
+        <h3>
+          By utilizing QRunner, we aim to reduce all repetitive tasks operated
+          by engineers, so they can more focus on building the business core
+          logic.
+        </h3>
+        </div>
+      </div>
       <Container></Container>
     </>
   );
