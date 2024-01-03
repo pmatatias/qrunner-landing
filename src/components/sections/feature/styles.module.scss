@@ -85,7 +85,7 @@
 
   @media (max-width: 658px) {
     padding: 30px 20px;
-    gap:30px 40px;
+    gap: 30px 40px;
   }
 
   h4 {
@@ -120,5 +120,32 @@
   @media (max-width: 658px) {
     max-width: 100px;
     max-height: 100px;
+  }
+}
+
+.utlizing {
+  background-color: $qr-soft-purple;
+  margin: max(60px, 4vw) 0;
+  padding: max(80px, 4vw);
+  .tsxt {
+    margin: 0px auto;
+    padding: 0px min(80px, 7vw);
+    max-width: 1440px;
+    h3 {
+      margin: 0px auto;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      color: $qr-green;
+
+      @media (max-width: 658px) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  @media (max-width: 658px) {
+    margin: 40px 0;
   }
 }

@@ -1,0 +1,20 @@
+@import "../../../sass/myvariable.scss";
+
+.base {
+  padding: 20px 0;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  background-image: $qr-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: inherit;
+  font-size: 48px;
+  @media (max-width: 658px) {
+    font-size: 32px;
+  }
+}

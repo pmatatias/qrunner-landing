@@ -5,8 +5,11 @@ import BaseButton from "../../basebutton";
 import { StaticImage } from "gatsby-plugin-image";
 import Divider from "../../divider";
 import CompanyLogo from "./company";
-const Features = (props: any) => {
+const Features = () => {
   return (
+    <div>
+
+   
     <Container>
       <h1 className={styles.mainTitle}>
         The <span>very simple</span> way <br className={styles.breakLine}></br>{" "}
@@ -57,6 +60,16 @@ const Features = (props: any) => {
       </div>
       <Divider />
     </Container>
+    <div className={styles.utlizing}>
+        <div className={styles.tsxt}>
+        <h3>
+          By utilizing QRunner, we aim to reduce all repetitive tasks operated
+          by engineers, so they can more focus on building the business core
+          logic.
+        </h3>
+        </div>
+      </div>
+    </div>
   );
 };
 
