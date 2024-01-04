@@ -1,20 +1,87 @@
 @import "../../../sass/myvariable.scss";
 
 .base {
-  padding: 20px 0;
+  padding: 30px;
+  @media (max-width: 658px) {
+    padding: 10px 0;
+  }
 }
 
 .title {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   font-weight: 500;
   background-image: $qr-gradient;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: inherit;
   font-size: 48px;
+
   @media (max-width: 658px) {
     font-size: 32px;
+    margin: 40px auto 50px;
   }
+}
+
+.tile {
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  @media (min-width: 1024px) {
+    margin: 120px auto;
+
+    gap: 100px;
+  }
+
+  @media (max-width: 852px) {
+    flex-direction: column;
+  }
+}
+.tileReverse {
+  @media (min-width: 852px) {
+    flex-direction: row-reverse;
+  }
+}
+.tileDesc {
+  gap: 40px 0;
+  flex: 1;
+  width: 100%;
+
+  h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 12px 0;
+
+    @media (max-width: 658px) {
+      font-size: 24px;
+    }
+  }
+
+  .tileSubdesc {
+    font-size: 18px;
+    line-height: 1.5;
+
+    ul {
+      font-size: inherit;
+      margin: 0.6rem 0;
+    }
+    li {
+      font-size: inherit;
+      span {
+        font-weight: bold;
+      }
+    }
+    @media (max-width: 658px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.tileImg {
+  flex: 2;
+  position: relative;
+  max-width: 700px;
+  max-height: 500px;
 }
