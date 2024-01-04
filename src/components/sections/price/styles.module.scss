@@ -1,0 +1,35 @@
+@import "../../../sass/myvariable.scss";
+
+.base {
+  background-color: $qr-soft-purple;
+}
+
+.inBase {
+  padding: 80px 0;
+  @media (max-width: 1024px) {
+    padding: 50px 0;
+  }
+  @media (max-width: 658px) {
+    padding: 10px 0;
+  }
+}
+.breakLine {
+    display: inline;
+  }
+.title {
+  text-align: center;
+  line-height: 1.25;
+  margin: 0 auto 60px;
+  font-weight: 500;
+  font-size: 48px;
+
+  @media (max-width: 658px) {
+    font-size: 32px;
+    margin: 40px auto 50px;
+    .breakLine {
+        display: none;
+      }
+  }
+
+
+}

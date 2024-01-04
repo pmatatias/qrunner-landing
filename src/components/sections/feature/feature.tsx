@@ -8,8 +8,6 @@ import CompanyLogo from "./company";
 const Features = () => {
   return (
     <div>
-
-   
     <Container>
       <h1 className={styles.mainTitle}>
         The <span>very simple</span> way <br className={styles.breakLine}></br>{" "}
