@@ -12,7 +12,11 @@ const Pricing = () => {
             QRunner helps teams of all sizes build better collaboration
           </h3>{" "}
         </div>
-        <PriceCard />
+        <div className={styles.pricelist}>
+          <PriceCard />
+          <PriceCard />
+          <PriceCard />
+        </div>
       </Container>
     </div>
   );

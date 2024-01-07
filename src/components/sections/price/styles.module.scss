@@ -2,17 +2,19 @@
 
 .base {
   background-color: $qr-soft-purple;
+  padding: 80px 0;
+  @media (max-width: 658px) {
+    padding: 20px 0;
+  }
 }
 
-.inBase {
-  padding: 80px 0;
-  @media (max-width: 1024px) {
-    padding: 50px 0;
-  }
-  @media (max-width: 658px) {
-    padding: 10px 0;
-  }
-}
+// .inBase {
+//   padding: 60px 0 10px 0;
+
+//   @media (max-width: 658px) {
+//     padding: 10px 0;
+//   }
+// }
 .breakLine {
   display: inline;
 }
@@ -26,11 +28,19 @@
 
   @media (max-width: 658px) {
     font-size: 32px;
-    margin: 40px auto 50px;
+    margin: 10px auto 50px;
     .breakLine {
       display: none;
     }
   }
+}
+
+.pricelist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
@@ -59,22 +69,54 @@
   p {
     text-align: center;
   }
-  .dollor {
-    margin: 8px auto;
-    display: flex;
-    gap: 0 4px;
-    text-align: center;
+}
+.dollor {
+  margin: 20px auto;
+  display: flex;
+  gap: 0 4px;
+  text-align: center;
 
-    .currency {
-      font-size: 16px;
-      align-items: start;
-    }
-    .amount {
-      font-size: 44px;
-    }
-    .duration {
-      font-size: 12px;
-      margin: auto 0;
+  .currency {
+    font-size: 16px;
+    align-items: start;
+  }
+  .amount {
+    font-size: 44px;
+  }
+  .duration {
+    font-size: 12px;
+    margin: auto 0;
+  }
+}
+.feats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rowTile {
+  display: flex;
+  margin: 5px 4px;
+  // align-items: center;
+  .iconIm {
+    height: 24px;
+    min-width: 24px;
+    width: 24px;
+  }
+  .txt {
+    margin-left: 8px;
+    text-align: left;
+    color: $qr-black;
+    flex-grow: 1;
+    font-size: 16px;
+
+    &.notavailable {
+      color: rgba($qr-black, 0.3);
     }
   }
+}
+
+.btn {
+  margin-top: 30px;
+  width: 100%;
 }
