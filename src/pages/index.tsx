@@ -9,6 +9,7 @@ import "../sass/basic.scss";
 import Concept from "../components/sections/concept";
 import Pricing from "../components/sections/price";
 import Reason from "../components/sections/reason";
+import Testimoni from "../components/sections/testimoni";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Concept />
       <Pricing />
       <Reason />
+      <Testimoni />
       <Container></Container>
     </>
   );
