@@ -10,6 +10,7 @@ import Concept from "../components/sections/concept";
 import Pricing from "../components/sections/price";
 import Reason from "../components/sections/reason";
 import Testimoni from "../components/sections/testimoni";
+import RequestDemo from "../components/sections/requestdemo";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -21,6 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Pricing />
       <Reason />
       <Testimoni />
+      <RequestDemo />
       <Container></Container>
     </>
   );
