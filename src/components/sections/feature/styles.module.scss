@@ -125,12 +125,12 @@
 
 .utlizing {
   background-color: $qr-soft-purple;
-  margin: max(60px, 4vw) 0;
-  padding: max(80px, 4vw);
+  margin: max(50px, 4vw) 0;
+  padding: max(100px, 4vw);
   .tsxt {
     margin: 0px auto;
     padding: 0px min(80px, 7vw);
-    max-width: 1440px;
+    max-width: 1024px;
     h3 {
       margin: 0px auto;
       font-weight: 500;
@@ -147,5 +147,6 @@
 
   @media (max-width: 658px) {
     margin: 40px 0;
+    padding: 80px 20px;
   }
 }
