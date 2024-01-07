@@ -7,7 +7,12 @@ import { GatsbyImage } from "gatsby-plugin-image";
 const ReasonCard = (props: { image: string; title: string; desc: string }) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+      allFile(
+        filter: {
+          sourceInstanceName: { eq: "images" }
+          relativeDirectory: { eq: "reasons" }
+        }
+      ) {
         nodes {
           childImageSharp {
             gatsbyImageData(width: 250, layout: CONSTRAINED)

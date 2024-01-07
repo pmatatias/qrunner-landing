@@ -21,7 +21,7 @@ const Concept = () => {
           </div>
           <div className={styles.tileImg}>
             <StaticImage
-              src="../../../images/concept1.png"
+              src="../../../images/concepts/concept1.png"
               alt="create own script"
             />
           </div>
@@ -36,7 +36,7 @@ const Concept = () => {
           </div>
           <div className={styles.tileImg}>
             <StaticImage
-              src="../../../images/concept2.png"
+              src="../../../images/concepts/concept2.png"
               alt="It's time for QRunner 
               to help you"
             />
@@ -62,7 +62,7 @@ const Concept = () => {
           </div>
           <div className={styles.tileImg}>
             <StaticImage
-              src="../../../images/concept3.png"
+              src="../../../images/concepts/concept3.png"
               alt="create own script"
             />
           </div>
@@ -94,7 +94,7 @@ const Concept = () => {
           </div>
           <div className={styles.tileImg}>
             <StaticImage
-              src="../../../images/concept4.png"
+              src="../../../images/concepts/concept4.png"
               alt="Now you all can run the script"
             />
           </div>

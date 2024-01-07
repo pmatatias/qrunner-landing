@@ -27,7 +27,7 @@ const Features = () => {
           <p>Plans and pricing</p>
           <StaticImage
             className={styles.icn}
-            src="../../../images/arrow_right.svg"
+            src="../../../images/icons/arrow_right.svg"
             alt="arrow-right"
           />
         </a>

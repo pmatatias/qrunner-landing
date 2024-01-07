@@ -6,9 +6,9 @@ const RowTile = (props: any) => {
     <div className={styles.rowTile}>
       <div className={styles.iconIm}>
         {props.isAvailable ? (
-          <StaticImage src="../../../images/check.svg" alt="cehck" />
+          <StaticImage src="../../../images/icons/check.svg" alt="cehck" />
         ) : (
-          <StaticImage src="../../../images/close.svg" alt="close" />
+          <StaticImage src="../../../images/icons/close.svg" alt="close" />
         )}
       </div>
 

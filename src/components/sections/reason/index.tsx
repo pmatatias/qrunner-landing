@@ -10,17 +10,17 @@ const Reason = () => {
         <h3 className={styles.title}>Why QRunner?</h3>
         <div className={styles.reasons}>
           <ReasonCard
-            image="security.png"
+            image="reasons/security.png"
             title="Secure"
             desc="Running your own script locally will expose all of your secret keys to whoever runs the scripts."
           />
           <ReasonCard
-            image="priority.png"
+            image="reasons/priority.png"
             title="Prioritization"
             desc="Let the engineers focus on the core business logic. Qrunner will reduce your budget for operational tasks."
           />
           <ReasonCard
-            image="rocket.png"
+            image="reasons/rocket.png"
             title="Fast & Responsive"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue ut eu nec sed et."
           />
