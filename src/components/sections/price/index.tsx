@@ -7,11 +7,9 @@ const Pricing = () => {
   return (
     <div className={styles.base}>
       <Container>
-        <div className={styles.inBase}>
-          <h3 className={styles.title}>
-            QRunner helps teams of all sizes build better collaboration
-          </h3>{" "}
-        </div>
+        <h3 className={styles.title}>
+          QRunner helps teams of all sizes build better collaboration
+        </h3>
         <div className={styles.pricelist}>
           <PriceCard />
           <PriceCard />

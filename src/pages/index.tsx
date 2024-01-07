@@ -8,6 +8,7 @@ import Features from "../components/sections/feature/feature";
 import "../sass/basic.scss";
 import Concept from "../components/sections/concept";
 import Pricing from "../components/sections/price";
+import Reason from "../components/sections/reason";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -17,6 +18,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Features />
       <Concept />
       <Pricing />
+      <Reason />
       <Container></Container>
     </>
   );

@@ -3,7 +3,6 @@
 .baseButton {
   background-color: $qr-blue;
   color: white;
-  width: 100%;
   padding: 3px 30px;
   font-size: 16px;
   border: none;
@@ -36,6 +35,18 @@
       top: 0;
       left: 0;
     }
+  }
+}
+
+.fullW {
+  width: 100%;
+}
+
+.secondary{
+  background-color: $qr-black;
+  &:hover {
+    background-color: #38363f;
+    transform: scale(1.05);
   }
 }
 

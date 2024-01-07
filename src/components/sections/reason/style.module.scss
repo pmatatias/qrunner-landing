@@ -1,0 +1,67 @@
+@import "../../../sass/myvariable.scss";
+
+.base {
+  margin: 50px auto;
+}
+
+.title {
+  text-align: center;
+  max-width: 1024px;
+  line-height: 1.25;
+  margin: 0 auto 60px;
+  font-weight: 500;
+  font-size: 48px;
+
+  @media (max-width: 658px) {
+    font-size: 32px;
+    margin: 10px auto 50px;
+    .breakLine {
+      display: none;
+    }
+  }
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  width: 324px;
+  min-width: 300px;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, #5e72e4 0%, #009eab 100%);
+  border-image-slice: 1;
+  background-image: linear-gradient(to bottom, #fff, #fff),
+    linear-gradient(to right, #5e72e4 0%, #009eab 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 40px 32px;
+  color: $qr-black;
+
+  .img {
+    max-width: 250px;
+    margin: 0 auto;
+    height: 200px;
+  }
+  .txt {
+    flex-grow: 1;
+  }
+
+  h4 {
+    font-size: 36px;
+    margin: 8px 0;
+    font-weight: bold;
+  }
+  p {
+    font-size: 18px;
+  }
+}

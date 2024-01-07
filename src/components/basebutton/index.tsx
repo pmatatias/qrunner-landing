@@ -5,7 +5,9 @@ const BaseButton = (props: any) => {
     <>
       <div>
         <button
-          className={`${styles.baseButton} ${props.className}`}
+          className={`${styles.baseButton} ${props.className} ${
+            props.isFullW ? styles.fullW : ""
+          } ${props.isSecondary ? styles.secondary : ""} `}
           onClick={props.onClick}
         >
           <span> {props.label}</span>

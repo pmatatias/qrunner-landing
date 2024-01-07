@@ -25,7 +25,7 @@ const PriceCard = () => {
         <RowTile isAvailable={false} name="Arcu gravida enim elementum" />
       </div>
       <div className={styles.btn}>
-        <BaseButton label="View More" />
+        <BaseButton label="View More" isFullW={true} />
       </div>
     </div>
   );
