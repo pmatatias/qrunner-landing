@@ -1,0 +1,13 @@
+.logoImage {
+  max-width: 140px;
+  max-height: 140px;
+  @media (max-width: 658px) {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+.sm {
+  max-width: 100px;
+  max-height: 100px;
+}

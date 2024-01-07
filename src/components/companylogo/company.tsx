@@ -1,13 +1,14 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { logoImage } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 interface CompanyLogoProps {
   imageName: string;
+  sm?: boolean;
 }
 
-const CompanyLogo: React.FC<CompanyLogoProps> = ({ imageName }) => {
+const CompanyLogo: React.FC<CompanyLogoProps> = ({ imageName, sm = false }) => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -28,7 +29,11 @@ const CompanyLogo: React.FC<CompanyLogoProps> = ({ imageName }) => {
   return (
     <div>
       {imageData ? (
-        <GatsbyImage image={imageData} alt={imageName} className={logoImage} />
+        <GatsbyImage
+          image={imageData}
+          alt={imageName}
+          className={`${styles.logoImage} ${sm ? styles.sm : ""}`}
+        />
       ) : (
         <div></div>
       )}

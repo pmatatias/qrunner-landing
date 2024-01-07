@@ -4,7 +4,7 @@ import Container from "../../container";
 import BaseButton from "../../basebutton";
 import { StaticImage } from "gatsby-plugin-image";
 import Divider from "../../divider";
-import CompanyLogo from "./company";
+import CompanyLogo from "../../companylogo/company";
 const Features = () => {
   return (
     <div>
