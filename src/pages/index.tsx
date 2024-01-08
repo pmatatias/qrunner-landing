@@ -11,6 +11,7 @@ import Pricing from "../components/sections/price";
 import Reason from "../components/sections/reason";
 import Testimoni from "../components/sections/testimoni";
 import RequestDemo from "../components/sections/requestdemo";
+import Footer from "../components/footer";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -23,7 +24,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Reason />
       <Testimoni />
       <RequestDemo />
-      <Container></Container>
+      <Footer />
     </>
   );
 };
