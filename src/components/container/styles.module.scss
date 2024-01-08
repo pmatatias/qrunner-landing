@@ -3,4 +3,8 @@
   padding: 0px 30px;
   max-width: 1440px;
 
+  @media (max-width: 658px) {
+    padding: 0px 4px;
+  }
 }
+ 
