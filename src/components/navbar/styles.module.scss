@@ -48,6 +48,10 @@
   li {
     text-decoration: none;
     cursor: pointer;
+    a{
+      text-decoration: inherit;
+      color: inherit;
+    }
 
     .active {
       color: aqua;

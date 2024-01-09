@@ -12,18 +12,32 @@ import Reason from "../components/sections/reason";
 import Testimoni from "../components/sections/testimoni";
 import RequestDemo from "../components/sections/requestdemo";
 import Footer from "../components/footer";
+import SmoothScroll from "../components/navbar/scrollsmoth";
+import Section from "../components/sections/section";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <Navbar />
+      <SmoothScroll />
       <Divider />
-      <Features />
-      <Concept />
-      <Pricing />
+      <Section id="features">
+        <Features />
+      </Section>
+      <Section id="concepts">
+        <Concept />
+      </Section>
+      <Section id="pricing">
+        <Pricing />
+      </Section>
       <Reason />
-      <Testimoni />
-      <RequestDemo />
+      <Section id="testimonials">
+        <Testimoni />
+      </Section>
+      <Section id="get-app">
+        <RequestDemo />
+      </Section>
+
       <Footer />
     </>
   );

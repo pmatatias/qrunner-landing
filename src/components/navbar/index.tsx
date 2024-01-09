@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 import Container from "../container";
 // import { graphql, useStaticQuery } from "gatsby";
 // import Img from "gatsby-image";
@@ -10,8 +10,16 @@ import HamburgerMenu from "../hamburger";
 
 const Navbar = () => {
   const scrollToTop = () => {
-    scroll.scrollToTop();
+    animateScroll.scrollToTop();
   };
+
+  const options = {
+    // Your options here, for example:
+    duration: 500,
+    smooth: true,
+  };
+
+  animateScroll.scrollToBottom(options);
 
   // const data = useStaticQuery(graphql`
   //   query {
@@ -55,10 +63,18 @@ const Navbar = () => {
             </div>
             <div className={styles.menu}>
               <ul className={styles.menuItems}>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Testimonials</li>
-                <li>Get App</li>
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing">Pricing</a>
+                </li>
+                <li>
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#get-app">Get App</a>
+                </li>
               </ul>
             </div>
             <div className={styles.btnTry}>
@@ -73,18 +89,18 @@ const Navbar = () => {
           <div
             className={`${styles.mobileMenu}  ${isExpand ? "" : styles.hidde}`}
           >
-            <Link to="/">
-              <li>Features</li>
-            </Link>
-            <Link to="/">
-              <li>Pricing</li>
-            </Link>
-            <Link to="/r">
-              <li>Testimonials</li>
-            </Link>
-            <Link to="/">
-              <li>Get App</li>
-            </Link>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#get-app">Get App</a>
+            </li>
 
             <div className={styles.btnTry2}>
               {" "}
