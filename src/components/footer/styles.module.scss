@@ -7,7 +7,9 @@
 .inbase {
   display: flex;
   padding: 0 20px;
-  gap: 120px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: min(120px, 6vw);
   @media (max-width: 658px) {
     flex-direction: column;
     gap: 40px;
@@ -17,13 +19,15 @@
 .wrapper {
   flex-grow: 1;
   display: flex;
-  max-width: 1040px;
+  max-width: 852px;
   flex-wrap: wrap;
   align-items: start;
   justify-content: start;
   gap: 80px;
 
-  @media (max-width: 1040px) {
+  @media (max-width: 658px) {
+    max-width: 400px;
+
     gap: 40px;
   }
 }
@@ -57,17 +61,18 @@
   font-size: 14px;
   margin-bottom: 8px;
 }
-
+.scl {
+  width: 170px;
+}
 .social {
   margin: 40px 0;
   display: flex;
   gap: 20px;
 }
 
-
-.copyRight{
-    margin: 40px auto 10px;
-    text-align: center;
-    font-size: 12px;
-    color: #fff;
+.copyRight {
+  margin: 40px auto 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
 }

@@ -42,19 +42,33 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className={styles.social}>
-          <a href="">
-            <StaticImage src="../../images/icons/insta.svg" alt="instagram" />
-          </a>
-          <a href="">
-            <StaticImage src="../../images/icons/twitter.svg" alt="twitter" />
-          </a>{" "}
-          <a href="">
-            <StaticImage src="../../images/icons/facebook.svg" alt="facbook" />
-          </a>
+        <div className={styles.inbase}>
+          <div className={styles.scl}>
+            <div className={styles.social}>
+              <a href="">
+                <StaticImage
+                  src="../../images/icons/insta.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a href="">
+                <StaticImage
+                  src="../../images/icons/twitter.svg"
+                  alt="twitter"
+                />
+              </a>{" "}
+              <a href="">
+                <StaticImage
+                  src="../../images/icons/facebook.svg"
+                  alt="facbook"
+                />
+              </a>
+            </div>
+          </div>
+          <div className={styles.wrapper}></div>
         </div>
       </Container>
-      <Divider color="#FFFFFF"/>
+      <Divider color="#FFFFFF" />
       <div className={styles.copyRight}>© 2021 QRunner Asia</div>
     </div>
   );
