@@ -43,8 +43,6 @@ const Navbar = () => {
                 />
               </a>
             </div>
-
-            <img src="../../images/qrunner-logo.png" alt="QRunner Logo" />
             <div className={styles.menu}>
               <ul className={styles.menuItems}>
                 <li>
