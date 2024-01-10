@@ -1,7 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-  pathPrefix: '/qrunner-landing',
+  pathPrefix: `/qrunner-landing`,
   // assetPrefix: '/qrunner-landing',
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
