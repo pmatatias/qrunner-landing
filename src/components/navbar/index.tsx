@@ -30,7 +30,6 @@ const Navbar = () => {
             <div className={styles.logo}>
               <a href="/">
                 <StaticImage
-                  // fluid={data.myImage.childImageSharp.fluid}
                   src="../../images/qrunner-logo.png"
                   style={{
                     // inline style to avoid graphql auto resize image
@@ -44,6 +43,8 @@ const Navbar = () => {
                 />
               </a>
             </div>
+
+            <img src="../../images/qrunner-logo.png" alt="QRunner Logo" />
             <div className={styles.menu}>
               <ul className={styles.menuItems}>
                 <li>
