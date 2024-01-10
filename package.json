@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "description": "qrunner-landing",
+  "homepage": "https://pmatatias.github.io/qrunner-landing", 
   "author": "pmatatias",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
+    "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -32,6 +34,7 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@types/react-scroll": "^1.8.10",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.1.6"
   }
 }
