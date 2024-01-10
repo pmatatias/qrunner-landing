@@ -110,6 +110,9 @@
 .hidde {
   display: none;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 .btnTry {
   margin: auto 0px;
   @media (max-width: 830px) {
