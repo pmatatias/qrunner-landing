@@ -17,9 +17,9 @@ const SmoothScroll: React.FC = () => {
         });
 
         // Update the URL
-        if (targetId) {
-          window.history.pushState(null, '', `${targetId}`);
-        }
+        // if (targetId) {
+        //   window.history.pushState(null, '', `${targetId}`);
+        // }
       }
     };
 
